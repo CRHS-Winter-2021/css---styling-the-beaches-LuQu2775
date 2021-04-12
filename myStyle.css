@@ -1,0 +1,53 @@
+body {
+	background-color: LightSkyBlue;
+}
+
+h1 {
+  color: White;
+  margin-left: 20px;
+  background-color: DodgerBlue;
+  border: 5px solid DeepSkyBlue;
+  padding: 5px;
+  margin: 5px;
+}
+
+.centered{
+  text-align: center;
+}
+
+#footer {
+  background-color: DarkGray ;
+  border: 2px solid DimGray;
+  padding: 5px;
+  margin: 5px;
+  
+}
+
+.footerlink {
+  color:rgb(52, 126, 110);
+}
+  
+#navbar {
+  color: White;
+  margin-left: 20px;
+  background-color: rgb(16, 66, 116);
+  border: 5px solid rgb(5, 48, 129);
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbar-link {
+  color: white;
+}
+
+#left-column {
+  background-color: ;
+}
+
+#center-column {
+  background-color: ;
+}
+
+#right-column {
+  background-color: ;
+}
