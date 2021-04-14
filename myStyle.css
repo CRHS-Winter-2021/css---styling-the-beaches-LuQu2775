@@ -1,53 +1,197 @@
+/* body of page */
+
 body {
-	background-color: LightSkyBlue;
+  background-image: linear-gradient(180deg, rgb(120, 195, 230), rgb(6, 65, 104)); /*a gradiant as the background because the single colour was bugging me */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin:0px; /* remove default margin */
 }
 
-h1 {
-  color: White;
-  margin-left: 20px;
-  background-color: DodgerBlue;
-  border: 5px solid DeepSkyBlue;
-  padding: 5px;
-  margin: 5px;
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(40, 60, 99);
+  font-family: Arial;
+  padding: 2px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 2
 }
 
-.centered{
-  text-align: center;
-}
-
-#footer {
-  background-color: DarkGray ;
-  border: 2px solid DimGray;
-  padding: 5px;
-  margin: 5px;
-  
-}
-
-.footerlink {
-  color:rgb(52, 126, 110);
-}
-  
-#navbar {
-  color: White;
-  margin-left: 20px;
-  background-color: rgb(16, 66, 116);
-  border: 5px solid rgb(5, 48, 129);
-  padding: 5px;
-  margin: 5px;
-}
-
-.navbar-link {
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add  background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(5, 48, 129);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(25, 76, 172);
+  z-index: 1000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* header */
+
+#header {
+  font-family: sans-serif;
+  font: Verdana;
+  text-align:center;
+  color: White;
+  margin-top:60px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(78, 99, 116);
+  border: 5px double rgb(255, 255, 255);
+  padding: 5px;
+}
+
+
+
+/* left column */
 #left-column {
-  background-color: ;
+  font-family: sans-serif;
+  font: Verdana;
+  font-size: 16px;
+  border: 3px solid rgb(76, 9, 102);
+  width:200px;
+  padding: 5px;
+  height: 650px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(106, 94, 165);
+  float:left;
+}
+#left-column li { /* Distance between list items */
+  margin: 0 0 25px 0;
 }
 
+#left-column a:visited {
+  color:rgb(53, 3, 73);
+}
+#left-column a:hover {
+  color:rgb(34, 34, 150);
+}
+#left-column a:active {
+  color:rgb(128, 0, 90);
+}
+#left-column a:link {
+  color:rgb(43, 92, 148);
+}
+
+/* center column */
 #center-column {
-  background-color: ;
+  font-family: sans-serif;
+  font: Verdana;
+  color: rgb(29, 73, 156);
+  border: 2px solid rgb(73, 120, 182);
+  width:50%;
+  height: 650px;
+  padding: 5px;
+  float:left;
+  margin-top: 5px;
+  margin-left: 45px;
+  background-color: rgb(126, 174, 223);
+  overflow-y: scroll;
 }
 
+/* images inside center column */
+#center-column img {
+  border: 5px ridge rgb(81, 97, 117);
+  width:98%;
+  text-align:center;
+  position: relative; /* brings the image higher up */
+  bottom:15px;
+  
+}
+
+/* right column */
 #right-column {
-  background-color: ;
+  font-family: sans-serif;
+  font: Verdana;
+  border: 2px solid rgb(71, 11, 0);;
+  width:20%;
+  height: 650px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  float:right;
+  background-color: rgb(202, 80, 80);
+  color: rgb(71, 0, 0);
+  overflow-y: scroll;
+}
+#right-column img {
+  border: 5px ridge rgb(133, 7, 7);
+  width:98%;
+  text-align:center;
+}
+
+/* Footer */
+#footer {
+  color: white;
+  background-color: DimGray ;
+  position: absolute;
+  margin-bottom: 5px;
+  margin-left:1%;
+  margin-right:1%;
+  width:98%;
+  bottom: 0;
+  
+}
+/* Links inside footer */
+#footer a {
+  color:rgb(30, 184, 89);
 }
