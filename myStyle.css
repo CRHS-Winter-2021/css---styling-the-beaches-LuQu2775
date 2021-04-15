@@ -105,9 +105,9 @@ body {
   font: Verdana;
   font-size: 16px;
   border: 3px solid rgb(76, 9, 102);
-  width:200px;
+  width:15%;
   padding: 5px;
-  height: 650px;
+  height: 550px;
   margin-top: 5px;
   margin-left: 10px;
   margin-right: 10px;
@@ -117,7 +117,6 @@ body {
 #left-column li { /* Distance between list items */
   margin: 0 0 25px 0;
 }
-
 #left-column a:visited {
   color:rgb(53, 3, 73);
 }
@@ -128,7 +127,7 @@ body {
   color:rgb(128, 0, 90);
 }
 #left-column a:link {
-  color:rgb(43, 92, 148);
+  color:rgb(10, 32, 56);
 }
 
 /* center column */
@@ -138,11 +137,12 @@ body {
   color: rgb(29, 73, 156);
   border: 2px solid rgb(73, 120, 182);
   width:50%;
-  height: 650px;
+  height: 550px;
   padding: 5px;
   float:left;
   margin-top: 5px;
-  margin-left: 45px;
+  margin-left: 5%;
+  margin-right:4%;
   background-color: rgb(126, 174, 223);
   overflow-y: scroll;
 }
@@ -163,7 +163,7 @@ body {
   font: Verdana;
   border: 2px solid rgb(71, 11, 0);;
   width:20%;
-  height: 650px;
+  height: 550px;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
