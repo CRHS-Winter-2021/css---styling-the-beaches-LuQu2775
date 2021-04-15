@@ -103,7 +103,7 @@ body {
 #left-column {
   font-family: sans-serif;
   font: Verdana;
-  font-size: 16px;
+  font-size: 17px;
   border: 3px solid rgb(76, 9, 102);
   width:15%;
   padding: 5px;
@@ -115,7 +115,7 @@ body {
   float:left;
 }
 #left-column li { /* Distance between list items */
-  margin: 0 0 25px 0;
+  margin: 0 0 50px 0;
 }
 #left-column a:visited {
   color:rgb(53, 3, 73);
